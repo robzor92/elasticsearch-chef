@@ -82,7 +82,6 @@ elastic_ip = private_recipe_ip("elastic","default")
 
 elasticsearch_configure 'elasticsearch' do
    path_home node['elastic']['home_dir']
-   path_conf "#{node['elastic']['home_dir']}/config" 
    logging({:"action" => 'INFO'})
    configuration ({
      'cluster.name' => node['elastic']['cluster_name'],
