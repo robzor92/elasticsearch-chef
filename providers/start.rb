@@ -135,7 +135,7 @@ indexes_installed = "#{node['elastic']['home_dir']}/.indexes_installed"
            "logdate" : {
              "type" : "date"
            } 
-         } 
+         }
        }
      }
    }'
@@ -199,16 +199,7 @@ indexes_installed = "#{node['elastic']['home_dir']}/.indexes_installed"
            "tensorflow":{
              "type":"keyword"
            },
-           "kafka":{
-             "type":"keyword"
-           },
-           "cuda":{
-             "type":"keyword"
-           },
-           "hops_py":{
-             "type":"keyword"
-           },
-           "hops":{
+           "spark":{
              "type":"keyword"
            },
            "hopsworks":{
@@ -217,7 +208,10 @@ indexes_installed = "#{node['elastic']['home_dir']}/.indexes_installed"
            "program":{
              "type":"keyword"
            },
-           "logdir":{
+           "hops":{
+             "type":"keyword"
+           },
+           "kafka":{
              "type":"keyword"
            }
          }
@@ -247,5 +241,4 @@ indexes_installed = "#{node['elastic']['home_dir']}/.indexes_installed"
         touch #{indexes_installed}
     EOF
     end
- 
 end
