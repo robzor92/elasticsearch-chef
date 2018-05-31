@@ -279,7 +279,7 @@ indexes_installed = "#{node['elastic']['home_dir']}/.indexes_installed"
    not_if { ::File.exists?( indexes_installed ) }
  end
 
- bash 'elastic-indexes-installed' do
+  bash 'elastic-indexes-installed' do
     user node['elastic']['user']
     code <<-EOF
         chmod 750 #{node['elastic']['version_dir']}
