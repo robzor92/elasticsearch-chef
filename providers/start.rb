@@ -196,22 +196,22 @@ indexes_installed = "#{node['elastic']['home_dir']}/.indexes_installed"
            "spark":{
              "type":"keyword"
            },
-           "tensorflow":{
+           "name":{
              "type":"keyword"
            },
-           "spark":{
+           "module":{
              "type":"keyword"
            },
-           "hopsworks":{
+           "function":{
              "type":"keyword"
            },
            "program":{
              "type":"keyword"
            },
-           "hops":{
+           "metric":{
              "type":"keyword"
            },
-           "kafka":{
+           "hyperparameter":{
              "type":"keyword"
            }
          }
