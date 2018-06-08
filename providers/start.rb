@@ -213,6 +213,21 @@ indexes_installed = "#{node['elastic']['home_dir']}/.indexes_installed"
            },
            "hyperparameter":{
              "type":"keyword"
+           },
+           "spark":{
+             "type":"keyword"
+           },
+           "tensorflow":{
+             "type":"keyword"
+           },
+           "hops_py":{
+             "type":"keyword"
+           },
+           "hops":{
+             "type":"keyword"
+           },
+           "hopsworks":{
+             "type":"keyword"
            }
          }
        }
