@@ -264,6 +264,9 @@ indexes_installed = "#{node['elastic']['home_dir']}/.indexes_installed"
            },
            "versioned_resources":{
              "type":"keyword"
+           },
+           "description":{
+             "type":"keyword"
            }
          }
        }
