@@ -258,6 +258,12 @@ indexes_installed = "#{node['elastic']['home_dir']}/.indexes_installed"
            },
            "logdir":{
              "type":"keyword"
+           },
+           "hyperparameter_space":{
+             "type":"keyword"
+           },
+           "versioned_resources":{
+             "type":"keyword"
            }
          }
        }
