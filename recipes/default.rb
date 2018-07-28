@@ -123,10 +123,17 @@ template "#{node['elastic']['home_dir']}/config/elasticsearch.yml" do
             })
 end
 
+<<<<<<< 3019b4976d1a8cefe64ebb3ecb9379571aca38f0
 #file "#{node['elastic']['home_dir']}/config/jvm.options" do
 #  user node['elastic']['user']
 #  action :delete
 #end
+=======
+file "#{node['elastic']['home_dir']}/config/jvm.options" do
+  user node['elastic']['user']
+  action :delete
+end
+>>>>>>> template jvm.options and set memory
 
 
 template "#{node['elastic']['home_dir']}/config/jvm.options" do
