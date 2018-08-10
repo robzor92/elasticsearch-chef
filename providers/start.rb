@@ -267,6 +267,9 @@ indexes_installed = "#{node['elastic']['home_dir']}/.indexes_installed"
            },
            "description":{
              "type":"keyword"
+           },
+           "app_id":{
+             "type":"keyword"
            }
          }
        }
