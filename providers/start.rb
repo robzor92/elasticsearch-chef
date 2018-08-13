@@ -193,42 +193,6 @@ indexes_installed = "#{node['elastic']['home_dir']}/.indexes_installed"
            "gpus_per_executor":{
              "type":"keyword"
            },
-           "name":{
-             "type":"keyword"
-           },
-           "module":{
-             "type":"keyword"
-           },
-           "function":{
-             "type":"keyword"
-           },
-           "program":{
-             "type":"keyword"
-           },
-           "metric":{
-             "type":"keyword"
-           },
-           "hyperparameter":{
-             "type":"keyword"
-           },
-           "status":{
-           "type":"keyword"
-           },
-           "start":{
-           "type":"date"
-           },
-           "finished":{
-           "type":"date"
-           },
-           "executors":{
-             "type":"keyword"
-           },
-           "memory_per_executor":{
-             "type":"keyword"
-           },
-           "gpus_per_executor":{
-             "type":"keyword"
-           },
            "spark":{
              "type":"keyword"
            },
