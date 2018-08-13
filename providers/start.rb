@@ -193,9 +193,6 @@ indexes_installed = "#{node['elastic']['home_dir']}/.indexes_installed"
            "gpus_per_executor":{
              "type":"keyword"
            },
-           "spark":{
-             "type":"keyword"
-           },
            "name":{
              "type":"keyword"
            },
